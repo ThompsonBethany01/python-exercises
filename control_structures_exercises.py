@@ -7,9 +7,9 @@
 
 # In[9]:
 
-
+print('Question 1.')
 #input asks user a question, and will store their answer in the varaible created
-day = input("What day of the week is it?")
+day = input("What day of the week is it? ")
 
 
 # In[10]:
@@ -26,16 +26,16 @@ else:
 
 # In[4]:
 
-
+print('Question 2')
 #variable created with user input
-day2 = input("What day is today?")
+day2 = input("What day is today? ")
 
 
 # In[5]:
 
 
 #conditional checks if a weekend day, Sat or Sun
-if day2.lower() == 'Saturday' or day2.lower() == 'Sunday':
+if day2.lower() == 'saturday' or day2.lower() == 'sunday':
     print("Today is the weekend!")
 else:
     print("Today is not the weekend... :(")
@@ -50,7 +50,7 @@ else:
 
 # In[10]:
 
-
+print('Question 3')
 #weekly_hours and hourly_pay are made up values, can change
 weekly_hours = 41
 hourly_pay = 15
@@ -99,7 +99,7 @@ i = 5
 
 # In[2]:
 
-
+print('Question 4')
 #prints i while less than 16, adds one per loop
 while i <= 15:
     print(i)
@@ -110,7 +110,7 @@ while i <= 15:
 
 # In[2]:
 
-
+print('Question 5')
 #starts count at 0
 count = 0
 
@@ -125,7 +125,7 @@ while count <= 100:
 
 # In[3]:
 
-
+print('Question 6')
 #starts count at 100
 count = 100
 
@@ -146,7 +146,7 @@ while count >= -10:
 
 # In[12]:
 
-
+print('Question 7')
 #starts loop at 2
 x = 2
 
@@ -183,7 +183,7 @@ while x < 1_000_000:
 
 # In[1]:
 
-
+print('Question 8')
 #starts at 100
 x = 100
 
@@ -215,7 +215,7 @@ while x <= 100 and x >= 5:
 
 # In[11]:
 
-
+print('Question 9')
 #user input for number variable
 num = input("Enter a number: ")
 
@@ -249,7 +249,7 @@ while count <= 10:
 
 # In[2]:
 
-
+print('Question 10')
 #for loop of range 1, 10
 for i in range(10):
     #prints string times loop index
@@ -293,7 +293,7 @@ for i in range(10):
 
 # In[13]:
 
-
+print('Question 11')
 #answering without break and continue
 #user input to decide which number to skip
 num = input("Choose an odd number to skip: ")
@@ -324,7 +324,7 @@ while x <= 50:
 
 # In[1]:
 
-
+print('Alternative Code')
 #answering with break and continue
 #user input to decide which number to skip
 num = input("Choose an odd number to skip: ")
@@ -351,7 +351,7 @@ for n in range(1, 51, 2):
 
 # In[33]:
 
-
+print('Question 12')
 #user input for positive number
 num = input("Enter a positive number: ")
 
@@ -372,7 +372,7 @@ for x in range(0,int(num) + 1):
 
 # In[17]:
 
-
+print('Question 13')
 #input for positive number
 num = input("Enter a positive number: ")
 
@@ -399,7 +399,7 @@ for x in range(int(num), 0, -1):
 
 # In[36]:
 
-
+print('Question 14')
 #prints range from 1 to 100
 for x in range(1, 101):
     
@@ -443,7 +443,7 @@ for x in range(1, 101):
 
 # In[83]:
 
-
+print('Question 15')
 #user input for number
 num = input('Enter an integer: ')
 
@@ -475,7 +475,7 @@ print('Goodbye')
 
 # In[66]:
 
-
+print('Working on bonus Question 15')
 #still working on bonus
 num = input('Enter an integer: ')
 mylist = []
@@ -505,7 +505,7 @@ print(mylist)
 
 # In[25]:
 
-
+print('Question 16')
 #checks conditionals based on grade input
 grade = input("Enter a grade between 0 and 100: ")
 
@@ -531,7 +531,7 @@ if 59 >= int(grade) >= 0:
 
 # In[29]:
 
-
+print('Bonus Question 16')
 #checks conditionals based on grade
 grade = input("Enter a grade between 0 and 100: ")
 #converts to integer
@@ -584,7 +584,7 @@ if 59 >= grade >= 0:
 
 # In[8]:
 
-
+print('Question 17')
 #user chooses genres
 genre = input("Enter a genre of books: ")
 #empty count variable
