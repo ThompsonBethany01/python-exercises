@@ -8,6 +8,7 @@
 # In[9]:
 
 print('Question 1.')
+print('This code says if your day is monday or not.')
 #input asks user a question, and will store their answer in the varaible created
 day = input("What day of the week is it? ")
 
@@ -27,6 +28,7 @@ else:
 # In[4]:
 
 print('Question 2')
+print('This code prints if your day is the weekend or not.')
 #variable created with user input
 day2 = input("What day is today? ")
 
@@ -51,6 +53,7 @@ else:
 # In[10]:
 
 print('Question 3')
+print('This code calculate your paycheck.')
 #weekly_hours and hourly_pay are made up values, can change
 weekly_hours = 41
 hourly_pay = 15
@@ -100,6 +103,7 @@ i = 5
 # In[2]:
 
 print('Question 4')
+print('This code counts from i to 15. i = 5.')
 #prints i while less than 16, adds one per loop
 while i <= 15:
     print(i)
@@ -111,6 +115,7 @@ while i <= 15:
 # In[2]:
 
 print('Question 5')
+print('This code counts from 0 to 100 by 2s.')
 #starts count at 0
 count = 0
 
@@ -126,6 +131,7 @@ while count <= 100:
 # In[3]:
 
 print('Question 6')
+print('This code counts from 100 to -10 by 5s.')
 #starts count at 100
 count = 100
 
@@ -147,6 +153,7 @@ while count >= -10:
 # In[12]:
 
 print('Question 7')
+print('This code starts at 2, displays the number squared that is less than 1,000,000, and increments by this number.')
 #starts loop at 2
 x = 2
 
@@ -184,6 +191,7 @@ while x < 1_000_000:
 # In[1]:
 
 print('Question 8')
+print('This code counts from 100 to 5 by 5s.')
 #starts at 100
 x = 100
 
@@ -216,6 +224,7 @@ while x <= 100 and x >= 5:
 # In[11]:
 
 print('Question 9')
+print('This code creates a multiplication table of your number from 1 to 10.')
 #user input for number variable
 num = input("Enter a number: ")
 
@@ -250,6 +259,7 @@ while count <= 10:
 # In[2]:
 
 print('Question 10')
+print('This code prints 1 through 9 times itself.')
 #for loop of range 1, 10
 for i in range(10):
     #prints string times loop index
@@ -294,6 +304,7 @@ for i in range(10):
 # In[13]:
 
 print('Question 11')
+print('This code prints odd numbers 1 through 50, and skips your number.')
 #answering without break and continue
 #user input to decide which number to skip
 num = input("Choose an odd number to skip: ")
@@ -352,6 +363,7 @@ for n in range(1, 51, 2):
 # In[33]:
 
 print('Question 12')
+print('This code counts from 0 to your number.')
 #user input for positive number
 num = input("Enter a positive number: ")
 
@@ -373,6 +385,7 @@ for x in range(0,int(num) + 1):
 # In[17]:
 
 print('Question 13')
+print('This code counts down from your number to 1')
 #input for positive number
 num = input("Enter a positive number: ")
 
@@ -400,6 +413,7 @@ for x in range(int(num), 0, -1):
 # In[36]:
 
 print('Question 14')
+print('Fizzbuzz!')
 #prints range from 1 to 100
 for x in range(1, 101):
     
@@ -444,6 +458,7 @@ for x in range(1, 101):
 # In[83]:
 
 print('Question 15')
+print('This code displays a table of squares and cubes from 1 to your number.')
 #user input for number
 num = input('Enter an integer: ')
 
@@ -457,7 +472,7 @@ for x in range(1, int(num) + 1):
 #continues based on input
 cont = input('Do you wish to continue, Y or N: ')
 
-while cont == 'Y':
+while cont.upper() == 'Y':
     
     num = input('Enter an integer: ')
 
@@ -506,6 +521,7 @@ print(mylist)
 # In[25]:
 
 print('Question 16')
+print('This code calculates your letter grade')
 #checks conditionals based on grade input
 grade = input("Enter a grade between 0 and 100: ")
 
@@ -584,27 +600,17 @@ if 59 >= grade >= 0:
 
 # In[8]:
 
+# # Create a list of dictionaries where each dictionary represents a book that you have read. Each dictionary in the list should have the keys title, author, and genre. Loop through the list and print out information about each book.
+
+# Prompt the user to enter a genre, then loop through your books list and print out the titles of all the books in that genre.
+
+# In[8]:
+
 print('Question 17')
-#user chooses genres
-genre = input("Enter a genre of books: ")
-#empty count variable
-count = 0
-
-#checks if book match genre regardless of capitalized spelling
-for x in books:
-    if genre.upper() == x['genre'].upper():
-        print(f'One book is: {x}')
-        #if book found, count goes up
-        count += 1
-
-#prints if no book in that genre found, aka count still equals 0
-if count == 0:
-    print("No such books in my list.")
-
-
-# In[2]:
-
-
+print('This code outputs books of whichever genre you choose.')
+print('Genres are limited. o_o')
+print('I have Science Fiction, YA Fiction, and Childrens.')
+print('However, you can enter whatever you like.')
 books = [
     {
         "title": "Ender's Game",
@@ -628,8 +634,25 @@ books = [
     },
     {
         "title": "Oh the Places You'll Go",
-        "genre": "Children",
+        "genre": "Childrens",
         "author": "Dr. Suess"
     }
 ]
+
+#user chooses genres
+genre = input("Enter a genre of books: ")
+#empty count variable
+count = 0
+
+#checks if book match genre regardless of capitalized spelling
+for x in books:
+    if genre.upper() == x['genre'].upper():
+        print(f'One book is: {x}')
+        #if book found, count goes up
+        count += 1
+
+#prints if no book in that genre found, aka count still equals 0
+if count == 0:
+    print("No such books in my list.")
+
 
